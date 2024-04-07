@@ -19,8 +19,9 @@ options:
 schema:
   owhttpd: bool
   device: device
-  device_type: list(serial_or_i2c|usb|ha7net|fake)
+  device_type: list(serial_or_i2c|usb |ednet|ha7net|fake)
   temperature_scale: list(Celsius|Fahrenheit|Kelvin|Rankine)
+  ednet_server: str?
   ha7net_server: str?
   debug: bool?
 ingress: true
