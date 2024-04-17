@@ -3,7 +3,7 @@ name: owserver (1-wire)
 version: 0.4.0
 slug: owserver-ednet
 description: onewire server to read 1-Wire devices incl. ednet direct access via TCP
-url: https://github.com/lrybak/hassio-owserver
+url: https://github.com/romeocontrol/hassio-owserver-ednet
 startup: system
 init: false
 arch: 
@@ -18,8 +18,10 @@ options:
   temperature_scale: Celsius
 schema:
   owhttpd: bool
-  device: device
-  device_type: list(serial_or_i2c|usb|ha7net|ednet|fake)
+  serial_device: serial_device
+  serial_device_type: list(serial_or_i2c|usb|ha7net|ednet|fake)
+  tcp_device: tcp_device
+  tcp_device_type: list(ha7net|ednet)
   temperature_scale: list(Celsius|Fahrenheit|Kelvin|Rankine)
   ha7net_server: str?
   ednet_server: str?
