@@ -45,6 +45,11 @@ Specify temperature scale used by owserver from the options below:
 
 Specify ha7net server. Use it with ha7net device only.
 
+### Option: `ednet_server`
+
+Specify ednet server. Use it with ednet device only.
+Example: https://www.mfe24.com/de/shop/17/1/13372381/
+
 ### Option: `debug`
 
 Specify debug mode for owserver.

@@ -17,8 +17,12 @@ elif bashio::var.equals "${device_type}" "ha7net"; then
     if  bashio::config.exists "ha7net_server"; then
         bashio::log.info "Configuring ha7net device"
         sed -i "s/%%device%%/ha7net = $(bashio::config 'ha7net_server')/g" /etc/owfs.conf
+elif bashio::var.equals "${device_type}" "ednet"; then
+    if  bashio::config.exists "ednet_server"; then
+        bashio::log.info "Configuring ednet device"
+        sed -i "s/%%device%%/ednet = $(bashio::config 'ednet_server')/g" /etc/owfs.conf        
     else
-        bashio::log.error "No ha7net server provided, using FAKE device instead!"
+        bashio::log.error "No ednet server provided, using FAKE device instead!"
         sed -i "s/%%device%%/FAKE = DS18B20,DS2405/g" /etc/owfs.conf
     fi
 else
