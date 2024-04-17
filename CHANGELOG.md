@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0
+
+- enable ednet server
+
 ## 0.3.6
 
 - Update hassio-addons/addon-base to v15.0.6
