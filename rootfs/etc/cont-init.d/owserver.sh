@@ -17,6 +17,7 @@ elif bashio::var.equals "${device_type}" "ha7net"; then
     if  bashio::config.exists "ha7net_server"; then
         bashio::log.info "Configuring ha7net device"
         sed -i "s/%%device%%/ha7net = $(bashio::config 'ha7net_server')/g" /etc/owfs.conf
+    fi    
 elif bashio::var.equals "${device_type}" "ednet"; then
     if  bashio::config.exists "ednet_server"; then
         bashio::log.info "Configuring ednet device"
