@@ -1,9 +1,9 @@
 ---
 name: owserver (1-wire)
 version: 0.4.0
-slug: owserver-ednet
-description: onewire server to read 1-Wire devices incl. ednet direct access via TCP
-url: https://github.com/romeocontrol/hassio-owserver-ednet
+slug: owserver-enet
+description: onewire server to read 1-Wire devices incl. enet direct access via TCP
+url: https://github.com/romeocontrol/hassio-owserver-enet
 startup: system
 init: false
 arch: 
