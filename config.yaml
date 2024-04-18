@@ -19,12 +19,12 @@ options:
 schema:
   owhttpd: bool
   serial_device: serial_device
-  serial_device_type: list(serial_or_i2c|usb|ha7net|ednet|fake)
+  serial_device_type: list(serial_or_i2c|usb|fake)
   tcp_device: tcp_device
-  tcp_device_type: list(ha7net|ednet)
+  tcp_device_type: list(ha7net|enet)
   temperature_scale: list(Celsius|Fahrenheit|Kelvin|Rankine)
   ha7net_server: str?
-  ednet_server: str?
+  enet_server: str?
   debug: bool?
 ingress: true
 panel_icon: mdi:alpha-w-box
