@@ -1,5 +1,5 @@
 {
-  "name": "Hass.io owserver (1-Wire) enet addon",
+  "name": "owserver (1-Wire) enet addon",
   "url": "https://github.com/romeocontrol/owserver-enet",
   "maintainer": "RainerT"
 }
