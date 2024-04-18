@@ -1,5 +1,5 @@
 ---
-name: owserver (1-wire)
+name: owserver-enet (1-wire)
 version: 0.4.0
 slug: owserver-enet
 description: onewire server to read 1-Wire devices incl. enet direct access via TCP
