@@ -1,4 +1,4 @@
-ARG BUILD_FROM
+etARG BUILD_FROM
 FROM ${BUILD_FROM}
 
 ENV LANG C.UTF-8
@@ -57,8 +57,8 @@ ENV PATH="/opt/owfs/bin:${PATH}"
 
 # Labels
 LABEL \
-  io.hass.name="owserver" \
-  io.hass.description="onewire server to read 1-Wire devices" \
+  io.hass.name="owserver-enet" \
+  io.hass.description="onewire server to read 1-Wire devices w enet" \
   io.hass.arch="${BUILD_ARCH}" \
   io.hass.type="addon" \
   io.hass.version=${BUILD_VERSION} \
